@@ -1,0 +1,119 @@
+.panel {
+  background: #111117;
+  border: 1px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 260px;
+  max-width: 300px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 4px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 12px;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label em {
+  font-style: normal;
+  color: #e0e0ff;
+  font-weight: 600;
+}
+
+/* Sliders */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #2a2a3a;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #7b6fff;
+  box-shadow: 0 0 8px #7b6fff88;
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #7b6fff;
+  box-shadow: 0 0 8px #7b6fff88;
+  border: none;
+  cursor: pointer;
+}
+
+/* Radio group */
+.radioGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.radioLabel input[type='radio'] {
+  accent-color: #7b6fff;
+  cursor: pointer;
+}
+
+/* Color picker */
+.colorInput {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px;
+  background: #1c1c28;
+}
+
+/* Select */
+.select {
+  background: #1c1c28;
+  border: 1px solid #2a2a3a;
+  border-radius: 6px;
+  color: #e0e0ff;
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.select:focus {
+  border-color: #7b6fff;
+}

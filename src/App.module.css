@@ -1,0 +1,81 @@
+/* ── Root ── */
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #0c0c12;
+  color: #e0e0f0;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 18px 28px;
+  border-bottom: 1px solid #1a1a28;
+  background: #0a0a10;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  background: linear-gradient(120deg, #ffdd44 0%, #ff6fd8 60%, #7b6fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sub {
+  font-size: 12px;
+  color: #555;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Main layout ── */
+.main {
+  flex: 1;
+  display: flex;
+  gap: 28px;
+  padding: 28px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Canvas section ── */
+.canvasArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.canvasWrap {
+  position: relative;
+  /* Checkered transparency pattern so user sees real transparency */
+  background-image:
+    linear-gradient(45deg, #1a1a24 25%, transparent 25%),
+    linear-gradient(-45deg, #1a1a24 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1a1a24 75%),
+    linear-gradient(-45deg, transparent 75%, #1a1a24 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: #0f0f18;
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 1px #2a2a3a,
+    0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.exportWrap {
+  width: 512px;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  flex-shrink: 0;
+}
